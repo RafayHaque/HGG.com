@@ -4,15 +4,26 @@ body {
     padding: 0;
     background-color: white;
     color: black;
+    text-align: center; /* Center aligns all content */
 }
 
-h1 {
-    color: red;
-    text-align: center;
-    padding-top: 20px;
+.image-container {
+    display: inline-block; /* Allows for centering in the parent */
+    position: relative; /* Positions the caption in relation to the image */
 }
 
-p {
-    text-align: center;
-    padding: 15px;
+.image-container img {
+    width: 50%; /* Adjust width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Provide some spacing from the top */
+}
+
+.caption {
+    color: red; /* Caption color */
+    font-size: 1.5em; /* Caption font size */
+    position: absolute; /* Position the caption */
+    top: 50%; /* Center vertically */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Align the center of the caption with the image center */
+    white-space: nowrap; /* Prevent caption from wrapping */
 }
