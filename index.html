@@ -8,14 +8,52 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Haque Group Global</h1>
-        <p>This is the homepage of Haque Group Global. Stay tuned for updates!</p>
+        <img src="/Users/rafayhaque/Documents/HGG/logo.jpeg" alt="Haque Group Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Our Products</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <div class="image-container">
-            <img src="images/ath.jpeg" alt="Ath" />
-            <div class="caption">I am a Gandu.</div>
+    
+    <section id="featured-products">
+        <!-- Slider container -->
+        <div class="slider">
+            <!-- Slide item -->
+            <div class="slide">
+                <img src="/Users/rafayhaque/Documents/HGG/mrcookie.jpeg" alt="Product Name">
+                <h2>Mr. Cookie</h2>
+                <p>10 taka</p>
+            </div>
+            <!-- Repeat slide item for each product -->
+            <!-- Include navigation buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-    </main>
+    </section>
+    
+    <section id="leaders">
+        <!-- Leader 1 -->
+        <div class="leader">
+            <img src="/Users/rafayhaque/Documents/HGG/leader1.jpeg" alt="Leader Name">
+            <h2>Tamizul Haque</h2>
+            <p>Chairman</p>
+        </div>
+        <!-- Leader 2 -->
+        <div class="leader">
+            <img src="/Users/rafayhaque/Documents/HGG/leader2.jpeg" alt="Leader Name">
+            <h2>Abu Khayer</h2>
+            <p>Managing Director</p>
+        </div>
+    </section>
+
+    <footer>
+        <div data-count="2">Our Factories</div>
+        <div data-count="1500">Our Workers</div>
+        <div data-count="70">Our Products</div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
