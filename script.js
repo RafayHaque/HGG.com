@@ -1,23 +1,16 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
-}
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
