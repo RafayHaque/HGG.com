@@ -98,7 +98,7 @@ footer div:before {
   .product-category {
     padding: 0 10vw;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: bolder;
     margin-bottom: 40px;
     text-transform: capitalize;
   }
@@ -116,24 +116,25 @@ footer div:before {
   
   .product-card {
     flex: 0 0 auto;
-    width: 500px;
-    height: 500px;
+    width: 370px;
+    height: 370px;
     margin-right: 40px;
   }
   
   .product-image {
     position: relative;
-    width: 100%;
-    height: 350px;
+    width: 210px;
+    height: 210px;
     overflow: hidden;
   }
   
   .product-thumb {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  }
-  
+    object-fit: contain; /* Changed from cover to contain */
+    object-position: center; /* This centers the image within the container */
+}
+
   
   .card-btn {
     position: absolute;
@@ -202,7 +203,7 @@ footer div:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
     cursor: pointer;
     z-index: 8;
   }
@@ -225,3 +226,9 @@ footer div:before {
   .nxt-btn:hover img {
     opacity: 1;
   }
+
+  .divider {
+    height: 40px; /* Adjust the thickness of the line */
+    background-color: red; /* Red line color */
+    margin: 1px 0; /* Spacing above and below the line */
+}
