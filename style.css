@@ -232,3 +232,55 @@ footer div:before {
     background-color: red; /* Red line color */
     margin: 1px 0; /* Spacing above and below the line */
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px; /* Adjust as needed */
+    }
+
+    nav li {
+        padding: 0.5em 0; /* Adjust as needed */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .product-container {
+        justify-content: center;
+    }
+
+    .product-card {
+        width: 85%; /* Adjust width for mobile devices */
+        margin: 0 auto 20px; /* Centering and adding margin at the bottom */
+    }
+
+    .pre-btn, .nxt-btn {
+        width: 5vw; /* Adjust button size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        margin-bottom: 20px; /* Add space between items */
+    }
+
+    #leaders {
+        flex-direction: column;
+    }
+
+    .leader {
+        margin-bottom: 20px; /* Add space between leaders */
+    }
+}
+
