@@ -66,14 +66,17 @@ footer div:before {
 
 #leaders {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     background-color: rgb(245, 238, 219);
 }
 
 .leader {
     text-align: center;
-    margin: 0 30px;
+    flex: 1 0 30%; /* Adjust the flex-basis to around 30% */
+    margin: 0 15px 30px; /* Adjust as needed */
 }
 
 .leader img {
@@ -287,4 +290,11 @@ footer div:before {
         margin-bottom: 20px; /* Add space between leaders */
     }
 }
+
+@media screen and (max-width: 600px) {
+    .leader {
+        flex-basis: 100%; /* Each leader takes full width */
+    }
+}
+
 
