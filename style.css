@@ -466,4 +466,24 @@ footer a:hover {
     
 
   }
+
+
+  
+@media only screen and (max-width: 844px) {
+  .fashion-container {
+      display: flex; /* Use flexbox */
+      flex-direction: column; /* Stack children vertically */
+      align-items: center; /* Center children horizontally */
+      justify-content: center; /* Center children vertically if needed */
+      text-align: center; /* Center text */
+  }
+
+  .fashion-logo {
+      width: auto; /* or your preferred width */
+      max-width: 100%; /* Ensures the image is responsive */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Other styles for h2, p as needed */
+}
   
