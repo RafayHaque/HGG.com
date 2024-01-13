@@ -377,4 +377,47 @@ footer div:before {
     font-weight: bold;
 }
 
+footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color for contrast */
+    padding: 40px 10vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Wrap items for smaller screens */
+}
+
+.footer-info, .footer-links, .footer-social {
+    flex: 1; /* Equal flex-grow value ensures equal width */
+    min-width: 200px; /* Ensures the section doesn't get too narrow */
+    margin-bottom: 20px; /* Spacing between sections */
+}
+
+footer h4 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+footer p, footer ul {
+    font-size: 1em;
+}
+
+footer ul {
+    list-style-type: none; /* Removes bullet points from list */
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 5px; /* Spacing between links */
+}
+
+footer a {
+    color: #fff; /* White color for links */
+    text-decoration: none; /* Removes underline from links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+footer a:hover {
+    color: #f0f0f0; /* Light grey color on hover */
+}
+
 
