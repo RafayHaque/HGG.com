@@ -420,4 +420,66 @@ footer a:hover {
     color: #f0f0f0; /* Light grey color on hover */
 }
 
+/* Base styles for larger screens can be set outside the media query */
+
+/* Responsive styles for screens that are 768px wide or less */
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .footer-info, .footer-links, .footer-social {
+        flex-basis: 100%; /* Each footer section takes full width */
+        text-align: center; /* Center the content */
+        margin-bottom: 20px; /* Add some space between the sections */
+    }
+
+    footer h4 {
+        margin-top: 20px; /* Add space above headings if needed */
+    }
+
+    footer ul {
+        padding: 0;
+    }
+
+    footer a {
+        display: block; /* Stack the links */
+        margin-bottom: 10px; /* Add space between stacked links */
+    }
+
+    /* Adjust the leaders section for small screens */
+    .leaders-container {
+        flex-direction: column;
+    }
+
+    .leaders-grid {
+        justify-content: center;
+    }
+
+    .leader {
+        width: 100%; /* Full width for leader cards */
+        margin-bottom: 20px; /* Space between leader cards */
+    }
+
+    /* Adjust the section-title for small screens */
+    .section-title {
+        font-size: 1.5em; /* Slightly smaller font size */
+    }
+
+    /* Adjust the product section for small screens */
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 100%; /* Full width for product cards */
+        margin-bottom: 20px; /* Space between product cards */
+    }
+}
+
+/* You can add more breakpoints for different screen sizes as needed */
+
+
 
