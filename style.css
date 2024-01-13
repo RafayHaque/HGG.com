@@ -73,6 +73,26 @@ footer div:before {
     background-color: rgb(245, 238, 219);
 }
 
+.leaders-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.leaders-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the spacing between leader items */
+}
+
 .leader {
     text-align: center;
     flex: 1 0 30%; /* Adjust the flex-basis to around 30% */
