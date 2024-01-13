@@ -452,4 +452,18 @@ footer a {
 footer a:hover {
   color: #f0f0f0; /* Light grey color on hover */
 }
+@media only screen and (max-width: 844px) {
+  header {
+      flex-direction: row;
+      align-items: flex-start;
+      padding-left:0px;
+      font-size: 1.2em;
+      
+  }
+  header img {
+    height: 84px; /* Adjust the height as needed */
+    width: 150px;
+    
 
+  }
+  
