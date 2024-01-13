@@ -319,14 +319,28 @@ footer div:before {
 
 
 #about-us {
-    background-color: #f9f9f9; /* Light background for the section */
-    padding: 40px 10vw; /* Adjust padding as needed */
-    color: #333; /* Darker text for better readability */
+    position: relative; /* Add this line */
+    background-color: #f9f9f9; /* This color will be the fallback if the image fails to load */
+    padding: 40px 10vw;
+    color: #333;
+}
+
+#about-us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('path-to-your-image.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.3; /* Adjust the opacity to your preference */
+    z-index: -1;
 }
 
 .about-container h2 {
     font-size: 2em;
-    color: #000; /* Dark color for the heading */
+    color: #000;
     margin-bottom: 20px;
 }
 
@@ -338,14 +352,15 @@ footer div:before {
 
 .about-content p {
     font-size: 1em;
-    line-height: 1.6; /* Enhanced line height for readability */
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
 .about-content p strong {
-    color: #000; /* Strong color for emphasis */
+    color: #000;
     font-weight: bold;
 }
+
 
 #upcoming-fashion {
     background-color: rgb(245, 238, 219); /* Adjust the background color */
