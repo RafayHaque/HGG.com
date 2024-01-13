@@ -284,7 +284,7 @@ footer div:before {
     }
 
     .product-card {
-        width: 85%; /* Adjust width for mobile devices */
+        width: 150%; /* Adjust width for mobile devices */
         margin: 0 auto 20px; /* Centering and adding margin at the bottom */
     }
 
@@ -313,7 +313,7 @@ footer div:before {
 
 @media screen and (max-width: 600px) {
     .leader {
-        flex-basis: 100%; /* Each leader takes full width */
+        flex-basis: 50%; /* Each leader takes full width */
     }
 }
 
