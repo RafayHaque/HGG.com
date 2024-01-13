@@ -16,7 +16,7 @@ header {
 }
 
 header img {
-    height: 80px; /* Adjust the height as needed */
+    height: 100px; /* Adjust the height as needed */
 }
 
 nav ul {
@@ -328,7 +328,7 @@ footer div:before {
 }
 
 #upcoming-fashion {
-    background-color: #fff; /* Adjust the background color */
+    background-color: rgb(245, 238, 219); /* Adjust the background color */
     padding: 40px 10vw;
     text-align: center; /* Center everything */
     color: #333;
