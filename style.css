@@ -127,8 +127,8 @@ footer div {
   position: relative;
   overflow: hidden;
   padding: 20px;
-  padding-top: 100px; /* Height of your fixed header */
-  margin-top: -100px; 
+  padding-top: 80px; /* Height of your fixed header */
+
 }
 
 .product-category {
