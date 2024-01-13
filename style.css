@@ -133,8 +133,12 @@ footer div:before {
     height: 100%;
     object-fit: contain; /* Changed from cover to contain */
     object-position: center; /* This centers the image within the container */
+    transition: transform 0.3s ease;
 }
 
+.product-thumb:hover {
+    transform: scale(1.1); /* Scale up the image to 110% of its original size */
+}
   
   .card-btn {
     position: absolute;
